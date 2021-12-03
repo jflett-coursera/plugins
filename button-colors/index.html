@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.coursera.org/widget/coursera-connect.css">
+        <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+    </head>
+    <body>
+        <h1>Button Game: Simple Plugin Testing</h1>
+        <p>Please click the RED button.</p>
+        <button onclick="greenclick()" style="background-color:green">Green</button>
+        <button onclick="blueclick()" style="background-color:blue">Blue</button>
+        <button onclick="redclick()" style="background-color:red">Red</button>
+        <button onclick="yellowclick()" style="background-color:yellow">Yellow</button>
+        <p id = "give-feedback"></p>
+    </body>
+    <script>
+        // Determine feedback based on button clicked.
+        function greenclick() {
+            document.getElementById('give-feedback').innerHTML = "Not Quite, please try again!";
+        }
+        function blueclick() {
+            document.getElementById('give-feedback').innerHTML = "Not Quite, please try again!";
+        }
+        function redclick() {
+            document.getElementById('give-feedback').innerHTML = "Great Job!";
+        }
+        function yellowclick() {
+            document.getElementById('give-feedback').innerHTML = "Not Quite, please try again!";
+        }
+
+    </script>
+</html>
